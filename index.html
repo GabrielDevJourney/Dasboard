@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="assets/icons/dashboard-active.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
-    <title>Dashboard</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="side-bar-left">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
-        <div class="header-cards"></div>
-        <div class="content-cards"></div>
-        <div class="side-bar-right"></div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="shortcut icon"
+			href="assets/icons/dashboard-active.png"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/b454cf0edf.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Dashboard</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="side-bar-left">
+				<button class="user">
+					<span class="icon-user"
+						><img
+							src="assets/icons/user-active.png"
+							alt="Icon of a user"
+						/>Coolest User</span
+					>
+				</button>
+				<button class="dashboard">
+					<span class="icon-dashboard"
+						><img
+							src="assets/icons/dashboard-active.png"
+							alt="dashboard icon"
+						/>Dashboard
+                    </span>
+				</button>
+				<button class="Analytics">
+					<span class="icon-analytics"
+						><img
+							src="assets/icons/analytics-active.png"
+							alt="Analytics icon"
+						/>Analytics
+                    </span>
+				</button>
+				<button class="Inbox">
+					<span
+						><img
+							class="icon-inbox"
+							src="assets/icons/inbox-active.png"
+							alt="Inbox Icon"
+						/>Inbox
+                    </span>
+				</button>
+				<button class="settings">
+					<span class="settings"
+						><img
+							src="assets/icons/settings-active.png"
+							alt=""
+						/>Settings
+                    </span>
+				</button>
+			</div>
+			<div class="header-cards"></div>
+			<div class="content-cards"></div>
+			<div class="side-bar-right"></div>
+		</div>
+	</body>
 </html>
