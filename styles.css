@@ -1,0 +1,14 @@
+*{
+    border: 1px solid black;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+        'side-bar-left header'
+        'side-bar-left content content content content side-bar-right'
+    ;
+}
+
