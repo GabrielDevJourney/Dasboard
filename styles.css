@@ -1,13 +1,14 @@
 *{
-    border: 1px solid black;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* *WRAPPER CONTAINER STYLING */
 .wrapper{
     margin: 0 10px 10px 10px;
+    padding: 10PX;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -20,19 +21,26 @@
     gap: 15px;
 }
 
+.side-bar-left,.content-cards, .side-bar-right ,.header-cards{
+    border: 1px solid black;
+}
 /* *SIDE BAR LEFT STYLING */
 .side-bar-left{
     grid-area: sidebar-left;
 }
 
+/* *SIDEBAR RIGHT */
+.side-bar-right{
+    grid-area: sidebar-right;
+}
+
+/* *HEADER AND CARDS */
 .header-cards{
     grid-area: header;
 }
 
+/* *CONTENT AND CARDS */
 .content-cards{
     grid-area: content-cards;
 }
 
-.side-bar-right{
-    grid-area: sidebar-right;
-}
