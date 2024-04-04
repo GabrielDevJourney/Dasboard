@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 18px;
 }
 
 /* *WRAPPER CONTAINER STYLING */
 .wrapper{
     margin: 0 10px 10px 10px;
-    padding: 10PX;
+    padding: 1rem;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -18,7 +19,7 @@
         'sidebar-left content-cards content-cards content-cards content-cards sidebar-right'
         'sidebar-left content-cards content-cards content-cards content-cards sidebar-right'
     ;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .side-bar-left,.content-cards, .side-bar-right ,.header-cards{
@@ -27,7 +28,26 @@
 /* *SIDE BAR LEFT STYLING */
 .side-bar-left{
     grid-area: sidebar-left;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: ;
 }
+.side-bar-left > button{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.side-bar-left > button > .icon-user{
+    padding-right: 1rem;
+}
+.side-bar-left > button > div{
+    padding-right: 1rem;
+}
+
 
 /* *SIDEBAR RIGHT */
 .side-bar-right{
