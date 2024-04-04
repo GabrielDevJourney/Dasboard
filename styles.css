@@ -5,7 +5,11 @@
     overflow: hidden;
     font-size: 18px;
 }
-
+:root{
+    -bgc-default: #ECE8E5;
+    -bgc-lightmode-category-selected: #f0d9c9;
+    -btn-txt-default: #686664;
+}
 /* *WRAPPER CONTAINER STYLING */
 .wrapper{
     margin: 0 10px 10px 10px;
