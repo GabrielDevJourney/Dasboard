@@ -43,11 +43,12 @@ body{
 /* *SIDE BAR LEFT STYLING */
 .side-bar-left{
     grid-area: sidebar-left;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(10,minmax(auto,1fr));
     background-color: var(--bgc-default);
     border-radius: 2rem;
+    row-gap: 1rem;
+    margin: 0rem 0.2rem;
 }
 .side-bar-left > button{
     display: flex;
@@ -55,7 +56,7 @@ body{
     border: none;
     border-radius: 2rem;
     padding: 0.8rem;
-    margin: 1rem;
+    margin: 0.4rem 0.6rem  ;
     background-color: transparent;
     color: var(--btn-txt-not-selected);
 }
@@ -71,11 +72,27 @@ body{
     color: var(--btn-txt-selected) ;
 }
 
+/* *DASHBOARD BUTTON  */
+.side-bar-left > .dashboard{
+    background-color: var(--bgc-lightmode-category-selected);
+    color: var(--btn-txt-selected);
+}
+.side-bar-left > .dashboard img:nth-child(1){
+    display: none;
+}
+.side-bar-left > .dashboard img:nth-child(2){
+    display: inline;
+}
+
+.settings{
+    grid-row: 10/11;
+}
+
 /* *BUTTONS HOVER CHANGES*/
 .dashboard:hover, 
 .analytics:hover, 
 .inbox:hover, 
-.settings :hover{
+.settings:hover{
     cursor: pointer;
     color: var(--btn-txt-selected);
 
