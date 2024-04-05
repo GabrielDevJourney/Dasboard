@@ -4,6 +4,7 @@
     padding: 0;
     overflow: hidden;
     font-size: 18px;
+    font-family: JetBrains Mono,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
     background-color: #F2F4EC;
@@ -64,11 +65,13 @@ body{
 .side-bar-left > button > div{
     padding-right: 1rem;
 }
+
+/* *USER BUTTON STYLING */
 .user > .btn-text{
     color: var(--btn-txt-selected) ;
 }
 
-/* *DASHBOARD BUTTON */
+/* *BUTTONS HOVER CHANGES*/
 .dashboard:hover, 
 .analytics:hover, 
 .inbox:hover, 
@@ -77,10 +80,10 @@ body{
     color: var(--btn-txt-selected);
 
 }
-.dashboard img:nth-child(2),
-.analytics img:nth-child(2),
-.inbox img:nth-child(2),
-.settings img:nth-child(2){
+.icon-default{
+    display: inline;
+}
+.icon-after-btn-click{
     display: none;
 }
 .dashboard:hover img:nth-child(1),
