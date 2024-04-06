@@ -11,11 +11,11 @@
 :root{
     --bgc-body-light-mode: #F2F4EC;
     --bgc-containers-light-mode: #EAECE5;
-    --bgc-lightmode-category-selected: #f0d9c9;
+    --bgc-lightmode-category-selected: #EFDCC9;
     --btn-txt-not-selected: #686664;
     --btn-txt-selected: #421111;
     --hearder-bgc: white;
-    --header-cards-bgc: #F0D9C9;
+    --header-cards-bgc: #EFDCC9;
     --header-text-color: #421111;
     --header-numbers-color: #421111;
     --header-percentual-color: #DA5F07;
@@ -136,13 +136,14 @@ body{
     grid-template-columns: repeat(4, minmax(auto, 1fr));
 }
 
-.number-projects-card,.new-messages-card,.github-commits-card,.lines-code-card{
+.cards{
     margin: 0 0.5rem;
     border-radius: 1rem;
-
+    background-color: var(--header-cards-bgc);
 }
 .cards-text {
-    padding: 0.2rem 0 0.2rem 1rem;
+    padding: 0.4rem 0 1rem 1rem;
+    color: var(--header-text-color);
 }
 
 
