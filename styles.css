@@ -128,13 +128,12 @@ body{
 }
 
 
-/* *HEADER AND CARDS */
+/* *HEADER AND CARDS STYLING */
 .header-cards{
     display: grid;
     grid-area: header;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
 }
-
 .cards{
     margin: 0 0.5rem;
     padding: 1.5rem 0 1rem 2rem;
@@ -147,6 +146,7 @@ body{
 .cards-number{
     font-size: 2rem;
     margin: 2rem 0;
+    color: var(--header-numbers-color);
 }
 .percentual-container{
     display: flex;
@@ -158,13 +158,6 @@ body{
     font-weight: 600;
     color: var(--header-percentual-color);
 }
-
-
-
-
-
-
-
 
 
 /* *SIDEBAR RIGHT */
