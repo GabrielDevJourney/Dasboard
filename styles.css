@@ -41,7 +41,7 @@ body{
     gap: 1rem;
 }
 
-.content-cards, .side-bar-right, .number-projects-card, .new-messages-card, .github-commits-card, .lines-code-card{
+.content-cards, .side-bar-right{
     border: 1px solid black;
 }
 
@@ -130,7 +130,6 @@ body{
 
 /* *HEADER AND CARDS */
 .header-cards{
-    border: 1px solid black;
     display: grid;
     grid-area: header;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
@@ -138,7 +137,7 @@ body{
 
 .cards{
     margin: 0 0.5rem;
-    padding: 1rem;
+    padding: 1.5rem 0 1rem 2rem;
     border-radius: 1rem;
     background-color: var(--header-cards-bgc);
 }
@@ -147,9 +146,18 @@ body{
 }
 .cards-number{
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
-
+.percentual-container{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.percentual-growth-num{
+    margin-left: 1.5rem;
+    font-weight: 600;
+    color: var(--header-percentual-color);
+}
 
 
 
