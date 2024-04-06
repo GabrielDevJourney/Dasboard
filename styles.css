@@ -42,7 +42,7 @@ body{
     gap: 1rem;
 }
 
-.content-cards, .side-bar-right ,.header-cards, .number-projects-card, .new-messages-card, .github-commits-card, .lines-code-card{
+.content-cards, .side-bar-right, .number-projects-card, .new-messages-card, .github-commits-card, .lines-code-card{
     border: 1px solid black;
 }
 
@@ -140,6 +140,9 @@ body{
     margin: 0 0.5rem;
     border-radius: 1rem;
 
+}
+.cards-text {
+    padding: 0.2rem 0 0.2rem 1rem;
 }
 
 
