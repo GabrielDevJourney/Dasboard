@@ -181,8 +181,13 @@ body{
 .header-cs,.header-othercourses{
     padding-top: 1rem;
 }
-
-
+.codecademy{
+    padding-top: 1rem;
+}
+.side-bar-right > img{
+    width: 100px;
+    height: 200px;
+}
 /* *CONTENT AND CARDS */
 .content-cards{
     grid-area: content-cards;
