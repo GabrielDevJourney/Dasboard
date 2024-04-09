@@ -41,10 +41,6 @@ body{
     gap: 1rem;
 }
 
-.content-cards{
-    border: 1px solid black;
-}
-
 /* *SIDE BAR LEFT STYLING */
 .side-bar-left{
     grid-area: sidebar-left;
@@ -191,5 +187,35 @@ body{
 /* *CONTENT AND CARDS */
 .content-cards{
     grid-area: content-cards;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto,1fr));
+    grid-template-rows: repeat(2,minmax(auto,1fr));
 }
-
+.card1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "img img img"
+        "img img img"
+        "desc desc ."
+        ". . icons"
+    ;
+    gap: 0.5rem;
+}
+.project-img{
+    grid-area: img;
+}
+.project-img > img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.project-description{
+    grid-area: desc;
+}
+.card-icons{
+    grid-area: icons;
+}
