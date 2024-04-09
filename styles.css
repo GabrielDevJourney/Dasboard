@@ -190,8 +190,11 @@ body{
     display: grid;
     grid-template-columns: repeat(2, minmax(auto,1fr));
     grid-template-rows: repeat(2,minmax(auto,1fr));
+    background-color: var(--bgc-containers-light-mode);
+    border-radius: 1rem;
 }
 .card1{
+    margin: 1rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: grid;
@@ -200,7 +203,7 @@ body{
     grid-template-areas: 
         "img img img"
         "img img img"
-        "desc desc ."
+        "desc desc desc"
         ". . icons"
     ;
     gap: 0.5rem;
@@ -215,6 +218,13 @@ body{
 }
 .project-description{
     grid-area: desc;
+    padding-left: 0.5rem;
+}
+.desc-project{
+    padding-top: 0.5rem;
+}
+.header-project{
+    font-size: 1.5rem;
 }
 .card-icons{
     grid-area: icons;
