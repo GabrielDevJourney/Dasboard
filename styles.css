@@ -162,7 +162,12 @@ body{
 
 /* *SIDEBAR RIGHT */
 .side-bar-right{
+    border: 1px solid black;
+    max-height: 100vh;
+    display: grid;
     grid-area: sidebar-right;
+    grid-template-rows: repeat(8, minmax(auto,1fr));
+    justify-content: center;
 }
 
 /* *CONTENT AND CARDS */
