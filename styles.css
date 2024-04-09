@@ -169,18 +169,22 @@ body{
     grid-template-rows: repeat(8, minmax(auto,1fr));
     justify-content: center;
 }
-.webdev-focus{
+.webdev-focus,.cs-course,.othercourses{
     margin: 1rem;
 
 }
-.header-web-focus, .header-cs{
+.header-web-focus, .header-cs, .header-othercourses{
     font-weight: 400;
     font-size: 24px;
     padding-bottom: 2rem;
 }
-.cs-course > img{
-    border-radius: ;
+.header-cs,.header-othercourses{
+    padding-top: 1rem;
 }
+.freecodecamp{
+    
+}
+
 /* *CONTENT AND CARDS */
 .content-cards{
     grid-area: content-cards;
