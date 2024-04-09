@@ -168,7 +168,6 @@ body{
 }
 .webdev-focus,.cs-course,.othercourses{
     margin: 1rem;
-
 }
 .header-web-focus, .header-cs, .header-othercourses{
     font-weight: 400;
@@ -177,11 +176,16 @@ body{
     text-align: center;
     color: var(--btn-txt-selected);
 }
+
 .header-cs,.header-othercourses{
     padding-top: 1rem;
 }
 .codecademy{
     padding-top: 1rem;
+}
+.logos-div{
+    width: 220px;
+    margin: auto;
 }
 
 /* *CONTENT AND CARDS */
