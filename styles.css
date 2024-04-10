@@ -75,6 +75,9 @@ body{
 }
 
 /* *DASHBOARD BUTTON  */
+.side-bar-left > button{
+    margin: 1rem;
+}
 .side-bar-left > .dashboard{
     background-color: var(--bgc-lightmode-category-selected);
     color: var(--btn-txt-selected);
