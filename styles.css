@@ -193,24 +193,22 @@ body{
     grid-area: content-cards;
     display: grid;
     grid-template-columns: repeat(2, minmax(auto,1fr));
-    grid-template-rows: repeat(2,minmax(auto,1fr));
-    background-color: var(--bgc-containers-light-mode);
-    border-radius: 1rem;
+    grid-template-rows: repeat(2,minmax(auto,448px));
+
 }
 .card1{
-    margin: 1rem;
+    background-color: var(--bgc-containers-light-mode);
+    border-radius: 1rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
     grid-template-areas: 
         "img img img"
         "img img img"
         "desc desc desc"
         ". . icons"
     ;
-    gap: 0.5rem;
 }
 .project-img{
     grid-area: img;
@@ -224,12 +222,14 @@ body{
     grid-area: desc;
     padding-left: 0.5rem;
 }
-.desc-project{
-    padding-top: 0.5rem;
-}
 .header-project{
+    padding-top: 1rem;
     font-size: 1.5rem;
 }
 .card-icons{
     grid-area: icons;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    padding: 1rem;
 }
