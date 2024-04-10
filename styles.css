@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -232,4 +233,9 @@ body{
     gap: 1rem;
     justify-content: end;
     padding: 1rem;
+}
+
+.ico-animation:hover{
+    animation: tada; 
+    animation-duration: 2s;
 }
