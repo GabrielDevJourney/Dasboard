@@ -195,13 +195,11 @@ body{
     display: grid;
     grid-template-columns: repeat(2, minmax(auto,1fr));
     grid-template-rows: repeat(2,minmax(auto,448px));
-
+    gap: 1rem;
 }
-.card1{
+.card{
     background-color: var(--bgc-containers-light-mode);
     border-radius: 1rem;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
