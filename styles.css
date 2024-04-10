@@ -9,6 +9,7 @@
 
 
 :root{
+    /* *light mode colors */
     --bgc-body-light-mode: #F2F4EC;
     --bgc-containers-light-mode: #EAECE5;
     --bgc-lightmode-category-selected: #EFDCC9;
@@ -34,7 +35,7 @@ body{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 192px;
     grid-template-areas:
-        'sidebar-left header header header header .'
+        'sidebar-left header header header header sidebar-right'
         'sidebar-left content-cards content-cards content-cards content-cards sidebar-right'
         'sidebar-left content-cards content-cards content-cards content-cards sidebar-right'
         'sidebar-left content-cards content-cards content-cards content-cards sidebar-right'
@@ -162,6 +163,7 @@ body{
 
 /* *SIDEBAR RIGHT */
 .side-bar-right{
+    
     border-radius: 1rem;
     background-color: var(--bgc-containers-light-mode);
     display: grid;
